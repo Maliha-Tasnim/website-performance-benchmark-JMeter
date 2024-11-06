@@ -1,1 +1,2 @@
-*.jmx linguist-language=XML
+*.jmx linguist-detectable
+*.jmx linguist-language=JMeter
