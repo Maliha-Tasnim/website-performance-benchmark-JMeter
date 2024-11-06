@@ -12,9 +12,9 @@ This project uses Apache JMeter to evaluate the performance of a website by simu
 
 ## Prerequisites
 
-🔹Java Development Kit (JDK): JMeter requires Java to run. Ensure you have JDK 8 or above installed. 
+🔹Java Development Kit (JDK): JMeter requires Java to run. Ensure you have [JDK 8](https://www.oracle.com/java/technologies/downloads/#java11?er=221886) or above installed. 
 
-🔹Apache JMeter: Download JMeter from Apache JMeter's official site. (https://jmeter.apache.org/download_jmeter.cgi)
+🔹Apache JMeter: Download [JMeter](https://jmeter.apache.org/download_jmeter.cgi) from Apache JMeter's official site. 
 
 ## Functionalities
 
@@ -49,13 +49,14 @@ For each website, the following test configuration is applied:
 The ramp-up period specifies how long JMeter takes to reach the full number of threads (users). In this case:
 
 
-                        1. 100 threads (users) are configured to start within a 5-second ramp-up period.
+    1. 100 threads (users) are configured to start within a 5-second ramp-up period.
 
-                        2. This means each thread begins approximately every 0.05 seconds (5 seconds / 100 threads).
+    2. This means each thread begins approximately every 0.05 seconds (5 seconds / 100 threads).
 
-                        3. For example, if there are 30 threads with a 120-second ramp-up period, each successive thread will start 4 seconds after the previous one.
+    3. For example, if there are 30 threads with a 120-second ramp-up period, 
+       each successive thread will start 4 seconds after the previous one.
 
-                        𝑺𝒕𝒂𝒓𝒕 𝒘𝒊𝒕𝒉 𝑹𝒂𝒎𝒑 − 𝒖𝒑 = 𝒏𝒖𝒎𝒃𝒆𝒓 𝒐𝒇 𝒕𝒉𝒓𝒆𝒂𝒅𝒔 𝒂𝒏𝒅 𝒂𝒅𝒋𝒖𝒔𝒕 𝒖𝒑 𝒐𝒓 𝒅𝒐𝒘𝒏 𝒂𝒔 𝒏𝒆𝒆𝒅𝒆𝒅
+    𝑺𝒕𝒂𝒓𝒕 𝒘𝒊𝒕𝒉 𝑹𝒂𝒎𝒑 − 𝒖𝒑 = 𝒏𝒖𝒎𝒃𝒆𝒓 𝒐𝒇 𝒕𝒉𝒓𝒆𝒂𝒅𝒔 𝒂𝒏𝒅 𝒂𝒅𝒋𝒖𝒔𝒕 𝒖𝒑 𝒐𝒓 𝒅𝒐𝒘𝒏 𝒂𝒔 𝒏𝒆𝒆𝒅𝒆𝒅
 
 Tip: Adjusting the ramp-up period can help avoid excessive load at the start of a test while ensuring that threads start running before others complete (unless a staggered start is desired).
 
@@ -99,7 +100,7 @@ The results provide insights into each website’s scalability, responsiveness, 
 
 ## Installation & Configuring Test Parameters
 
-1. Clone this repository:  git clone https://github.com/Maliha-Tasnim/Website-Load-Performance-Testing-Using-JMeter-.git
+1. Clone this repository:  git clone https://github.com/Maliha-Tasnim/website-performance-benchmark-JMeter.git
 
 2. Download JMeter: Extract the downloaded JMeter package and ensure it’s accessible in the system’s PATH or note its location for usage.
 
@@ -118,5 +119,5 @@ The results provide insights into each website’s scalability, responsiveness, 
 
 2. Monitor Results: Use the View Results Tree and Summary Report listeners in JMeter to observe real-time test results.
 
-3. Exporting Results: Export test results for analysis. JMeter allows to save results in formats such as CSV or XML, which can be used for further reporting.
+3. Exporting Results for Analysis: JMeter allows to save results in formats such as CSV or XML, which can be used for further reporting.
 
